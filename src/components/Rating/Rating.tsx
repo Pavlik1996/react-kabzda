@@ -1,6 +1,10 @@
 import React from "react";
 
-export const Rating = (props: any) => {
+type RatingPropsType = {
+    value: 1 | 2 | 3 | 4 | 5 | 0
+}
+
+export const Rating = (props: RatingPropsType) => {
     if (props.value === 1) {
         return (
             <div>
@@ -67,8 +71,11 @@ export const Rating = (props: any) => {
     )
 }
 
+type StartPropsType = {
+    selected: boolean
+}
 
-const Star = (props: any) => {
+const Star = (props: StartPropsType) => {
     if (props.selected) {
         return (
             <span> <b>start</b> </span>
