@@ -1,16 +1,16 @@
 import React from "react";
 
-export const Accordion = () => {
+export const Accordion = (props: any) => {
     return (
         <div>
-            <AccordionTitle/>
+            <AccordionTitle title={props.title}/>
             <AccordionBody/>
         </div>
     )
 }
 
-export const AccordionTitle = () => {
-    return <h3>Menu</h3>
+export const AccordionTitle = (props: any) => {
+    return <h3>{props.title}</h3>
 }
 
 export const AccordionBody = () => {
@@ -19,8 +19,6 @@ export const AccordionBody = () => {
             <li>1</li>
             <li>2</li>
             <li>3</li>
-            <li>4</li>
-            <li>5</li>
         </ul>
     )
 }
