@@ -19,18 +19,19 @@ function App() {
 
             <OnOff on={on} onChange={() => setOn(!on)}/>
 
-            <UnControlledOnOff setOn={setOn} on={true}/>
+            <UnControlledOnOff setOn={setOn} />
             <UnAccordion titleValue={'menuOne'}/>
-            <UnRating/>
+            {/*<UnRating />*/}
 
             <Rating value={ratingValue} onClick={setRatingValue}/>
 
 
-            <Accordion
-                titleValue={"Menu ONE"}
-                collapsed={accordionCollapsed}
-                onChange={() => setAccordionCollapsed(!accordionCollapsed)}
-            />
+            {/*<Accordion*/}
+
+            {/*    titleValue={"Menu ONE"}*/}
+            {/*    collapsed={accordionCollapsed}*/}
+            {/*    onChange={() => setAccordionCollapsed(!accordionCollapsed)}*/}
+            {/*/>*/}
 
         </div>
 
